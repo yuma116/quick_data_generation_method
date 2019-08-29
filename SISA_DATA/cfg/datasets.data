@@ -1,0 +1,5 @@
+classes= 3
+train  = /media/yoshimoto/data/Temp/darknet/LOCAL/dataset2/dataset/train_list
+valid  = /media/yoshimoto/data/Temp/darknet/LOCAL/dataset2/dataset/test_list
+names = /media/yoshimoto/data/Temp/darknet/LOCAL/dataset2/dataset/class.txt
+backup = /media/yoshimoto/data/Temp/darknet/LOCAL/dataset2/backup

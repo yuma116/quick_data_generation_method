@@ -1,0 +1,5 @@
+classes= 32
+train  = /home/putrabot/yoshimoto/darknet/LOCAL/dataset_wrs_bm/new/file_list.txt
+valid  = /home/putrabot/yoshimoto/darknet/LOCAL/dataset_wrs_bm/test_yolodata/file_list.txt
+names = data/obj.names
+backup = /home/putrabot/yoshimoto/darknet/LOCAL/backup/
