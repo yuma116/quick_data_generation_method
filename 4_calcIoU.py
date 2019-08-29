@@ -6,7 +6,7 @@ CLASS_NUM   = 3
 DEBUG_MODE  = False
 ### YOLOの設定 ###
 CFG_FILE    = "./SISA_DATA/cfg/yolov2.cfg"
-WEIGHT_FILE = "./SISA_DATA/weight/method1.weights"
+WEIGHT_FILE = "./SISA_DATA/LOCAL/proposed_method.weights"
 META_FILE   = "./SISA_DATA/cfg/datasets.data"
 CLASS_FILE  = "./SISA_DATA/cfg/class.txt"
 
