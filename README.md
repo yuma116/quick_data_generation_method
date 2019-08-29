@@ -1,6 +1,6 @@
 
 # A Quick Data Generation Method for Training Object Detection Algorithms in Home Environments
-* ** English version is in preparation. **
+* **English version is in preparation.**
 * このリポジトリは，下記の論文の再現実験用です．
 * Yuma Yoshimoto, Muhammad Farhan Mustafa, Wan Zuha Wan Hasan, and Hakaru Tamukoh, "A Quick Data Generation Method for Training Object Detection Algorithms in Home Environments", International Workshop on Smart Info-Media Systems in Asia (SISA), 2019.
 * このリポジトリは，`https://github.com/pjreddie/darknet/`のリポジトリを2019年7月5日にクローンして作成したものです．
@@ -45,7 +45,7 @@
 
 # 実験で作成された重みのダウンロード手順
 * 論文中のExperiment 3で作成された重みを公開している．
-* ** 論文中では「The training number was 2000 epochs」と書かれておりますが，誤りです．正しくは4000エポック学習しています．訂正いたします．申し訳ございません． **
+* **論文中では「The training number was 2000 epochs」と書かれておりますが，誤りです．正しくは4000エポック学習しています．訂正いたします．申し訳ございません．**
 * 準備方法は下記のとおりである
 ```
 $ cd <quick_data_generation_method dir>/SISA_DATA
