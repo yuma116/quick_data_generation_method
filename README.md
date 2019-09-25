@@ -1,6 +1,6 @@
 
 # A Quick Data Generation Method for Training Object Detection Algorithms in Home Environments
-* **English version is in preparation.**
+* [**English version is here.**](README_en.md)
 * このリポジトリは，下記の論文の再現実験用です．
 * Yuma Yoshimoto, Muhammad Farhan Mustafa, Wan Zuha Wan Hasan, and Hakaru Tamukoh, "A Quick Data Generation Method for Training Object Detection Algorithms in Home Environments", International Workshop on Smart Info-Media Systems in Asia (SISA), 2019.
 * このリポジトリは，`https://github.com/pjreddie/darknet/`のリポジトリを2019年7月5日にクローンして作成したものです．
