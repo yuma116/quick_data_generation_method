@@ -48,9 +48,9 @@
 $ cd <quick_data_generation_method dir>/SISA_DATA
 $ mkdir LOCAL
 $ cd LOCAL
-$ wget https://www.dropbox.com/s/dhvawa2g1r3mxwy/proposed_method.weights # by Proposed Method
-$ wget https://www.dropbox.com/s/jnozzbh6l7gxbj2/method1.weights # by Method 1
-$ wget https://www.dropbox.com/s/jhwcok8dntb9318/method2.weights # by Method 2
+$ wget https://www.dropbox.com/s/prrkot3snitgqmw/proposed_method.weights # by Proposed Method
+$ wget https://www.dropbox.com/s/gm8eldnobr6tzfh/method1.weights # by Method 1
+$ wget https://www.dropbox.com/s/0rudllxg4yvoerg/method2.weights # by Method 2
 ```
 
 
