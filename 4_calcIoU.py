@@ -32,8 +32,8 @@ if __name__ == '__main__':
   print("YOLO関連 起動設定")
   #==============================================
   dn.set_gpu(0)
-  net = dn.load_net( CFG_FILE, WEIGHT_FILE, 0)
-  meta = dn.load_meta( META_FILE)
+  net = dn.load_net( CFG_FILE.encode("utf-8"), WEIGHT_FILE.encode("utf-8"), 0)
+  meta = dn.load_meta( META_FILE.encode("utf-8"))
   # 名前読み込み
   _class_name_path = CLASS_FILE
   _class = []
@@ -42,7 +42,7 @@ if __name__ == '__main__':
   for _line in lines:
     _class.append( _line.split("\n")[0])
   if DEBUG_MODE:
-    print _class
+    print(_class)
   #----------------------------------------------
 
 
@@ -58,7 +58,7 @@ if __name__ == '__main__':
   print("投票箱準備")
   #==============================================
   _ious = []
-  for i in xrange( CLASS_NUM):
+  for i in range( CLASS_NUM):
     _ious.append([]) # BBの数, IoU値
   #----------------------------------------------
 
@@ -72,7 +72,7 @@ if __name__ == '__main__':
     # 出力：_jpg:画像データ，_txt:BB情報 
     #==============================================
     if DEBUG_MODE:
-      print _jpg_path
+      print(_jpg_path)
     _txt_path = _jpg_path.replace(".jpg",".txt")
     # 画像ファイル読み込み
     _jpg = cv2.imread( _jpg_path)
@@ -108,7 +108,7 @@ if __name__ == '__main__':
     # 入力：_jpg_path:画像ファイルパス，_jpg:読み込み済み画像データ
     # 出力：_yolo:YOLOの認識データ
     #==============================================
-    _yolo_list = dn.detect(net, meta, _jpg_path)
+    _yolo_list = dn.detect(net, meta, _jpg_path.encode("utf-8"))
     _yolo      = []
     # BBが引けているかチェック
     if not len( _yolo_list) < 1: # BBが0だったら
@@ -116,7 +116,7 @@ if __name__ == '__main__':
     for _yolo_tmp in _yolo_list:
       # 認識結果の読み込み
       DEBUG(_yolo_tmp)
-      yolo_class    = int(  _class.index(_yolo_tmp[0]))
+      yolo_class    = int(  _class.index(_yolo_tmp[0].decode("utf-8")))
       yolo_x_center = float(_yolo_tmp[2][0])
       yolo_y_center = float(_yolo_tmp[2][1])
       yolo_width    = float(_yolo_tmp[2][2])
